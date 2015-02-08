@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'pry'
 # The Etsy gem provides a friendly Ruby interface to the Etsy API 
 gem 'etsy'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
