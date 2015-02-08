@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'better_errors', '~> 2.1.1'
 gem 'pry'
 # The Etsy gem provides a friendly Ruby interface to the Etsy API 
 gem 'etsy'
