@@ -1,0 +1,2 @@
+class EtsyController < ApplicationController
+end
