@@ -1,40 +1,74 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html>
+
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+         <title>Etsy Searcher</title>
     </head>
+
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <div id="header">
-            <h1 id="logo"><a href="#">Etsy</a></h1>
-
-            <form id="search">
-                <input id="search-query" name="q">
-                <input type="submit" value="Search">
-            </form>
-
-            <ul id="header-nav">
-                <li><a href="#" title="Home">Home</a></li>
-                <li><a href="#" title="Favorites">Favorites</a></li>
-                <li><a href="#" title="You">You</a></li>
-                <li><a href="#" title="Cart">Cart</a></li>
-            </ul>
+        <header>
+            <div class="leftside">
+              <h1>
+                <a hef="#"><img src="https://www.etsy.com/assets/dist/images/etsylogo.20150106184300.png"/a>
+              </h1>
+              <div class="search-bar">
+                  <form>
+                      <input type="text" class="search-input" placeholder ="Search for items or shops">
+                      <button class="search-button">Search</button>
+                      <button class="browse-button">Browse</button>
+                  </form>
+              </div>
+            </div>
+            <div class="rightside">
+                <ul>
+                    <li class="help"><a href="#">Help</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="sidebar">
+        <p class="returned">Show Results For:</p>
+          <h3>Item Type</h3>
+          <div class="whiskey">
+          <li><a href="#">All Items</a></li>
+          <li><a href="#">Handmade</a></li>
+          <li><a href="#">Vintage</a></li>
+          <li><a href="#">Craft Supplies</a></li>
         </div>
 
-        <div id="content"><%= @results %></div>
+        <h3>Categories</h3>
+        <div class="handmade-list">
+            <li><a href="#">Handmade</a></li>
+            <li><a href="#">Glass</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Housewares</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Art</a></li>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Ceremaics and Pottery</a></li>
+            <li><a href="#">Clothing</a></li>
+        </div>
+        <div class="vintage-list">
+            <li><a href="#">Collectibles</a></li>
+            <li><a href="#">Serving</a></li>
+            <li><a href="#">Housewares</a></li>
+            <li><a href="#">Antique</a></li>
+        </div>
+        <div class="craft-supplies-list">
+            <li><a href="#">Bead</a></li>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Scrapbooking</a></li>
+            <li><a href="#">Fabric</a></li>
+        </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+
+
+
+
+        </div>
     </body>
-</html>
+
+
+ </html>
