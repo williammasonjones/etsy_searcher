@@ -62,11 +62,27 @@
             <li><a href="#">Scrapbooking</a></li>
             <li><a href="#">Fabric</a></li>
         </div>
-
-
-
-
-
+        <div class="search-results"
+            <% @results.each do |x| %>
+                <div class="results-box">
+                    <%= link_to x["url"] do %>
+                      <%= image_tag x["Images"][0]['url_170x135'], size: "214x170" %>
+                    <% end %>
+                    <div class="result-details">
+                        <div class="item-title">
+                            <%= x['title'][0, 32] %>
+                        </div>
+                        <div class="details">
+                            <div class="shop-name">
+                              <%= "#{x['Shop']['shop-name']}" %>
+                            </div>
+                            <div class="price">
+                              <%= "$#{x['price']} USD" %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% end %>
         </div>
     </body>
 
